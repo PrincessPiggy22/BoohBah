@@ -8,29 +8,27 @@ public class DanceRoutine {
 
     }
 
-    void buildRoutine(){ // Geeks for Geeks
-
+    String buildRoutine(){ // Geeks for Geeks
+        // used AI to debug (wasn't helpful)
         StringBuilder sb = new StringBuilder();
 
-        for (Boohbah boohbahs : this.boohbahs) {
-            sb.append(boohbahs.performMove()).append("/n");
+        for (Boohbah b : this.boohbahs) {
+                sb.append(b.performMove()).append("\n");
         }
-
-        System.out.println(sb);
-
+        return sb.toString();
     }
 
-    void modifyRoutine(){ // Geeks for Geeks
+    String modifyRoutine(){ // Geeks for Geeks
 
         StringBuilder sb = new StringBuilder();
 
-        for (Boohbah boohbahs : this.boohbahs) {
-            sb.append(boohbahs.performMove()).append("/n");
+        for (Boohbah b : this.boohbahs) {
+            String skibidi = b.performMove().replace("performs", "dances to");
+            sb.append(skibidi).append("\n");
+
+
         }
-
-        sb.toString().replace("performs", "dances to");
-
-        System.out.println(sb);
+        return sb.toString();
 
     }
 

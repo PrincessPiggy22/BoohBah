@@ -9,17 +9,16 @@ public class Boohbah {
         this.danceMove = danceMove;
     }
 
-    void setName(String name){
-        this.name = name;
+    public String getName(){
+        return name;
     }
 
-    void setDance(String dance){
-        this.danceMove = dance;
+    public String getDance(){
+        return danceMove;
     }
 
-    Object performMove(){
-        System.out.println(this.name + " performs " + this.danceMove);
-        return null;
+    String performMove(){
+        return this.name + " performs " + this.danceMove;
     }
 
 

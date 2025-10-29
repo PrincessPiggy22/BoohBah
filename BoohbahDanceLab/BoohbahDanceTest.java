@@ -6,7 +6,11 @@ public class BoohbahDanceTest {
 
 
         Boohbah[] theBoohbahs = {b1,b2,b3};
-        new DanceRoutine(theBoohbahs).buildRoutine();
-        new DanceRoutine(theBoohbahs).modifyRoutine();
+        DanceRoutine routine = new DanceRoutine(theBoohbahs);
+
+        System.out.println("Og routine:");
+        System.out.println(routine.buildRoutine());
+        System.out.println("\nModified routine:");
+        System.out.println(routine.modifyRoutine());
     }
 }
